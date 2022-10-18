@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{{small_title}}</title>
+		<meta name="description" content="BadApe-Bot"/>
+		<meta name="keywords" content="password, generator, password generator" />
+		<meta name="author" content="TheGreatSkeeve" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="bp-header cf">
+				<div class="dummy-logo">
+					<h2 class="dummy-heading">THC-LAB</h2>
+				</div>
+				<div class="bp-header__main">
+					<h1 class="bp-header__title">
+						{{big_title}}
+					</h1>
+				</div>
+			</header>
+			<nav id="ml-menu" class="menu">
+				<div class="menu__wrap">
+					{% block content %}
+					{% endblock %}
+					
+
+                                        <a STYLE="font-size: 22pt" href="/">Bad Ape</a><br/>
+                                        <a STYLE="font-size: 22pt" href="https://thc-lab.net">Home Page</a><br/>
+                                        <a STYLE="font-size: 22pt" href="/about.html">Info</a><br/>
+                                        <a STYLE="font-size: 22pt" href="https://reddit.com/user/THC-Lab">Contact</a><br/>
+
+			</nav>
+			<div class="content">
+				{% block content2 %}
+				{% endblock %}
+			</div>
+			<div class="leaderboard">
+				{% block content3 %}
+				{% endblock %}
+			</div>
+		</div>
+	</body>
+</html>

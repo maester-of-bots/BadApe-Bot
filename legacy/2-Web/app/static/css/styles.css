@@ -1,0 +1,175 @@
+
+body {
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	overflow: hidden;
+	margin: 0;
+	color: #cecece;
+	background: #2a2b30;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: #05F7F7;
+	outline: none;
+}
+
+a:hover {
+	color: #ddd;
+}
+
+.container {
+	overflow-y: auto;
+	height: 100vh;
+}
+
+
+/* Blueprint header */
+
+.bp-header {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.bp-header__main {
+	margin: 0 0 0 auto;
+	padding: 2em 3em 0;
+	text-align: right;
+}
+
+.bp-header__title {
+	font-size: 1.3em;
+	font-weight: 400;
+	line-height: 1.3;
+	margin: 0.25em 0 0;
+}
+
+
+.dummy-logo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 280px;
+	height: 120px;
+	padding: 1em 0 0 0;
+	text-align: center;
+	color: #3b3d4a;
+	background: #1c1d22;
+}
+
+
+.dummy-heading {
+	font-size: 0.75em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.content {
+	position: relative;
+	min-height: 300px;
+	margin: 0 0 0 300px;
+    float: left;
+    width: 50%;
+}
+
+.leaderboard {
+	position: relative;
+	min-height: 300px;
+	margin: 0 0 0 300px;
+    float: right;
+    width: 50%;
+}
+
+.bp-header__main {
+	margin: 0 0 0 auto;
+	padding: 2em 3em 0;
+	text-align: right;
+}
+.info {
+	font-size: 5em;
+	font-weight: bold;
+	padding: 20vh 1em 0;
+	text-align: center;
+	color: #47484c;
+}
+
+.info2 {
+	font-size: 2.1em;
+	font-weight: bold;
+	padding: 10vh 1em 0;
+	text-align: center;
+}
+
+
+/* Menu styles */
+
+.menu {
+	position: fixed;
+	top: 120px;
+	left: 0;
+	width: 280px;
+	height: calc(100vh - 120px);
+	background: #1c1d22;
+}
+
+.menu__wrap {
+	position: absolute;
+	top: 3.5em;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #05F7F7;
+  border: none;
+  color: #032121;
+  text-align: center;
+  font-size: 28px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonX {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #EA1616;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
